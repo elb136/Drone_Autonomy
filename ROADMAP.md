@@ -4,21 +4,21 @@ Tick items as they're done (`[x]`). Each finished milestone gets a dated entry i
 
 ## Phase 0: Dev environment
 
-Ubuntu 22.04 (arm64 VM) · ROS 2 Humble · Gazebo Harmonic. These are the versions ArduPilot's own ROS 2 guides use.
+Ubuntu 26.04 (arm64 VM on Apple Silicon). ArduPilot's ROS 2 guides are written for Ubuntu 22.04 + ROS 2 Humble + Gazebo Harmonic; on 26.04 the matching versions are **ROS 2 Lyrical Luth + Gazebo Jetty**. Decide at the ROS 2 step whether ArduPilot's ROS 2 packages work on Lyrical, or whether a second 22.04 VM is needed.
 
-- [x] Ubuntu 22.04 installed (QEMU VM, arm64)
+- [x] Ubuntu 26.04 installed (UTM/QEMU VM, arm64)
 - [x] Build tools: git, cmake, ninja, gcc/clang, gdb, clangd, ccache, bear ([guide](guides/01-dev-environment.md))
 - [x] Git identity + SSH key connected to GitHub
 - [x] VS Code (arm64, from Microsoft's apt repo) with clangd, C/C++, CMake Tools, Python
 - [x] Hello-world check: CMake build, breakpoint in debugger, clangd hover
 - [x] This log repo created
-- [ ] ArduPilot cloned, prerequisites installed, `./waf configure --board sitl && ./waf copter` builds
-- [ ] `compile_commands.json` for ArduPilot, so clangd navigation works in the ArduPilot tree
+- [x] ArduPilot cloned, prerequisites installed, `./waf configure --board sitl && ./waf copter` builds ([guide](guides/02-ardupilot-sitl-build.md))
+- [x] `compile_commands.json` for ArduPilot, so clangd navigation works in the ArduPilot tree
 - [ ] `sim_vehicle.py -v ArduCopter --console --map` flies takeoff and Loiter
 - [ ] SITL under gdb, breakpoint hit inside `AP_OpticalFlow`
-- [ ] ROS 2 Humble installed; ArduPilot "ROS 2 with SITL" guide working (`ros2 node list` shows `/ap`)
-- [ ] Gazebo Harmonic + `ardupilot_gazebo` plugin, iris model flying from SITL (check 3D performance in the VM first)
-- [ ] Python tools: pymavlink, MAVProxy, evo, numpy, matplotlib
+- [ ] ROS 2 installed (Lyrical on 26.04, or Humble in a 22.04 VM); ArduPilot "ROS 2 with SITL" guide working (`ros2 node list` shows `/ap`)
+- [ ] Gazebo (Jetty on 26.04, or Harmonic on 22.04) + `ardupilot_gazebo` plugin, iris model flying from SITL (check 3D performance in the VM first)
+- [ ] Python tools: pymavlink and MAVProxy ✅ (from ArduPilot's prereqs); still to add: evo, numpy, matplotlib
 
 ## Phase 1–2, Track A: C++
 

@@ -1,8 +1,8 @@
 # Guide 01: Dev environment, part 1 (toolchain, Git/SSH, VS Code)
 
-What I set up, **what each piece is for**, and how to redo it from scratch on a fresh Ubuntu 22.04 machine. It's written for someone new to Linux and C++ development, which is me.
+What I set up, **what each piece is for**, and how to redo it from scratch on a fresh Ubuntu machine. It's written for someone new to Linux and C++ development, which is me.
 
-Machine: Ubuntu 22.04 in a QEMU virtual machine on an **ARM (arm64)** processor. The arm64 part matters in a few places, marked ⚠️.
+Machine: **Ubuntu 26.04 ("Resolute")** in a UTM/QEMU virtual machine on an Apple Silicon Mac, so an **ARM (arm64)** processor. The arm64 part matters in a few places, marked ⚠️. (I first thought this was 22.04; the package addresses saying `resolute` showed otherwise. Check with `lsb_release -a`.)
 
 ---
 
@@ -81,7 +81,7 @@ Check:
 ```bash
 gcc --version && cmake --version && gdb --version && clangd --version
 ```
-On 22.04: gcc 11, cmake 3.22, clangd 14. All fine.
+Any version number means it's installed. Ubuntu 26.04 ships recent versions of all of these, which is fine for everything in this plan.
 
 ---
 

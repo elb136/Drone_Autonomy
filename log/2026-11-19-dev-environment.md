@@ -3,7 +3,7 @@
 **Phase:** 0, Dev environment · **Time:** one evening
 
 ## Done
-- Ubuntu 22.04 VM on arm64 with the C++ toolchain: gcc 11, clang/clangd 14, CMake 3.22 + Ninja, gdb, ccache, bear
+- Ubuntu 26.04 VM on arm64 (UTM on Apple Silicon) with the C++ toolchain: gcc, clang/clangd, CMake + Ninja, gdb, ccache, bear
 - Git identity and SSH authentication to GitHub
 - VS Code with clangd for code navigation and the C/C++ extension for debugging; CMake set to export `compile_commands.json`
 - End-to-end check on a CMake hello-world: build, breakpoint and variable inspection in gdb, clangd hover
