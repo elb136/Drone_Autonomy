@@ -5,7 +5,7 @@
 ## Done
 - Flew ArduCopter SITL from MAVProxy: GUIDED takeoff to 10 m → Loiter → forward flight on virtual sticks → position hold → LAND (touchdown 0.5 m/s, auto-disarm)
 - First SITL dataflash log recorded: `00000001.BIN`, 10.4 MB, the same format as my real-flight logs
-- Found the Mac's address from the VM (`192.168.64.1`) and started SITL with `--out` to QGroundControl on the Mac (connection to be confirmed)
+- Found the Mac's address from the VM (`192.168.64.1`) and connected QGroundControl on the Mac to SITL in the VM via MAVProxy `--out`: live map and telemetry
 
 ## What broke, and the fix
 - **`sim_vehicle.py: command not found`.** The prereqs script put the PATH line and venv activation in `~/.profile`, which terminal windows on this Ubuntu didn't apply, even after logging out. Moved both into `~/.bashrc`, which every terminal reads.

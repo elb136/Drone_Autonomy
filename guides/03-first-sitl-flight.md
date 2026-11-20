@@ -160,7 +160,7 @@ In instructions, `<that address>` is a **placeholder**: replace the whole thing,
 - macOS firewall: allow QGroundControl when asked, or check System Settings → Network → Firewall.
 - Check that the address after `via` still matches. It can change if UTM's network settings change.
 
-Status 2026-11-20: QGC installed, SITL started with `--out`; connection still to be confirmed.
+Status 2026-11-20: ✅ connected. QGroundControl on the Mac shows the SITL quad on the map, with live telemetry from the VM.
 
 ---
 
