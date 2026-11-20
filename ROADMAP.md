@@ -14,7 +14,8 @@ Ubuntu 26.04 (arm64 VM on Apple Silicon). ArduPilot's ROS 2 guides are written f
 - [x] This log repo created
 - [x] ArduPilot cloned, prerequisites installed, `./waf configure --board sitl && ./waf copter` builds ([guide](guides/02-ardupilot-sitl-build.md))
 - [x] `compile_commands.json` for ArduPilot, so clangd navigation works in the ArduPilot tree
-- [ ] `sim_vehicle.py -v ArduCopter --console --map` flies takeoff and Loiter
+- [x] `sim_vehicle.py -v ArduCopter` flies takeoff, Loiter and landing from MAVProxy ([guide](guides/03-first-sitl-flight.md))
+- [ ] QGroundControl on the Mac connected to SITL (`--out=udp:192.168.64.1:14550`)
 - [ ] SITL under gdb, breakpoint hit inside `AP_OpticalFlow`
 - [ ] ROS 2 installed (Lyrical on 26.04, or Humble in a 22.04 VM); ArduPilot "ROS 2 with SITL" guide working (`ros2 node list` shows `/ap`)
 - [ ] Gazebo (Jetty on 26.04, or Harmonic on 22.04) + `ardupilot_gazebo` plugin, iris model flying from SITL (check 3D performance in the VM first)
