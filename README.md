@@ -10,7 +10,7 @@ My work log as I move from flight-controller integration into **autonomy**: Ardu
 
 | Phase | Status | What it delivers |
 |---|---|---|
-| 0. Dev environment | In progress: toolchain, SITL build and first SITL flight done | Ubuntu, C++ toolchain, ArduPilot SITL, ROS 2, Gazebo |
+| 0. Dev environment | In progress: toolchain, SITL build, first flight and debugger done; ROS 2 + Gazebo next | Ubuntu, C++ toolchain, ArduPilot SITL, ROS 2, Gazebo |
 | 1. Foundations | Not started | ArduPilot driver internals; first VIO run on the EuRoC dataset |
 | 2. Contribute and measure | Not started | First upstream ArduPilot PR; VIO benchmark scored with `evo` |
 | 3. Flagship | Not started | VIO → ArduPilot ExternalNav in Gazebo, GPS-free Loiter, stress tests |
@@ -28,6 +28,7 @@ ROADMAP.md the full milestone checklist
 
 ## Latest entries
 
+- [2026-11-21: Debugging the flight code in SITL](log/2026-11-21-sitl-debugging.md)
 - [2026-11-20: First SITL flight](log/2026-11-20-first-sitl-flight.md)
 - [2026-11-20: ArduPilot source + SITL build](log/2026-11-20-ardupilot-sitl-build.md)
 - [2026-11-19: Dev environment, part 1 (toolchain, Git/SSH, VS Code)](log/2026-11-19-dev-environment.md)
